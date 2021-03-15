@@ -7,14 +7,14 @@ function init(){
         d.names.forEach(name => dropdown.append("option").text(name).property("value"));
         getPlot(d.names[0]);
         getTable(d.names[0]);
-    })
-}
+    });
+};
 
 // function to update when dropdown selection changes
 function optionChanged(id) {
     getPlot(id);
     getTable(id);
-}
+};
 
 // function that plots charts based on selection
 function getPlot(id) {
